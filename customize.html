@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="customize.css">
+    <title>Customize</title>
+
+    <script src="try.js">
+	</script>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img class="logo" src="assets/logo-removebg-preview.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse justify-content-center">
+				<form class="d-flex justify-content-center" role="search">
+					<input class="form-control me-2 label" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+	
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+					<li class="nav-item">
+						<a id= "len1"class="nav-link hoverable" aria-current="page" href="search.html">Search</a>
+					</li>
+					<li class="nav-item">
+						<a id= "len2"class="nav-link hoverable" href="customize.html">Customize</a>
+					</li>
+					<li class="nav-item">
+						<a id= "len3"class="nav-link hoverable" href="signup.html">Sign up</a>
+					</li>
+					<li class="nav-item">
+						<a id= "len4"class="nav-link hoverable" href="login.html">Login in</a>
+					</li>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Carrousel -->
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+			<img src="asset3/cherry.png" class="d-block w-100 img-fluid">
+			</div>
+			<div class="carousel-item">
+			<img src="asset3/oud.png" class="d-block w-100 img-fluid">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+<!--Les 6 Carrés-->
+<div class="container  mt-5 mb-5">
+	<div class="row text-center mb-2">
+		<div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center ">
+			<div class="card carre">
+				<div class="card-body">
+					<img class="mini" src="asset3/fraise.png" alt="">
+					<div class="mt-4">
+						<h3>Fraise</h3>
+						<p>Description de la carte 3</p>
+						<input  onclick="arwa()" type="range" min="0" max="100" value="50" class="slider">
+						<p>Pourcentage: <span id="percentage">50%</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+			<div class="card carre">
+				<div class="card-body">
+					<img class="mini" src="asset3/bois-de-santal.png" alt="">
+					<div class="mt-4">
+						<h3>Bois de santal</h3>
+						<p>Description de la carte 3</p>
+						<input  onclick="arwa()" type="range" min="0" max="100" value="50" class="slider">
+						<p>Pourcentage: <span id="percentage">50%</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+			<div class="card carre">
+				<div class="card-body">
+					<img class="mini" src="asset3/citron.png" alt="">
+					<div class="mt-4">
+						<h3>Citron</h3>
+						<p>Description de la carte 3</p>
+						<input  onclick="arwa()" type="range" min="0" max="100" value="50" class="slider">
+						<p>Pourcentage: <span id="percentage">50%</span></p>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+	<div class="row text-center mt-5">
+		<div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+			<div class="card carre">
+				<div class="card-body">
+					<img class="mini" src="asset3/noix-de-coco.png" alt="">
+					<div class="mt-4">
+						<h3>Noix de coco</h3>
+						<p>Description de la carte 3</p>
+						<input  onclick="arwa()" type="range" min="0" max="100" value="50" class="slider">
+						<p>Pourcentage: <span id="percentage">50%</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+			<div class="card carre">
+				<div class="card-body">
+					<img class="mini" src="asset3/cerise.png" alt="">
+					<div class="mt-4">
+						<h3>Cerise</h3>
+						<p>Description de la carte 3</p>
+						<input  onclick="arwa()" type="range" min="0" max="100" value="50" class="slider">
+						<p>Pourcentage: <span id="percentage">50%</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+			<div class="card carre">
+				<div class="card-body">
+					<img class="mini" src="asset3/huile-essentielle.png" alt="">
+					<div class="mt-4">
+						<h3>Musc</h3>
+						<p>Description de la carte 3</p>
+						<input onclick="arwa()" type="range" min="0" max="100" value="50" class="slider">
+						<p>Pourcentage: <span id="percentage">50%</span></p>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+	<div class="d-flex justify-content-center mt-5">
+		<form action="faza.html">
+			<button id="message" class="submit btn-outline-success" type="submit">Submit</button>
+		</form>
+		
+	</div>
+</div>
+
+<!--Footer-->
+	<footer>
+		<div class="container">
+			<div class="row d-flex ">
+				<div class="col-4 text-center mt-4 ">
+					<h4>A propos de nous</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, nesciunt autem delectus expedita voluptates aliquam natus. Maiores dolorum sit inventore? Natus aperiam quaerat possimus corporis dolore saepe facere excepturi ratione?</p>
+				</div>
+				<div class="col-4 text-center  ">
+					<a href="index.html"><img class="logofooter" src="assets/logo-removebg-preview.png" alt=""></a>
+					<ul class="list-inline d-flex justify-content-center ">
+						<li class="list-inline-item hoverable"><a  href="search.html" id= "len1"class="nav-link hoverable">Search</a></li>
+						<li class="list-inline-item hoverable"><a  href="customize.html" id= "len2"class="nav-link hoverable">Customize</a></li>
+						<li class="list-inline-item hoverable"><a  href="signup.html" id= "len3"class="nav-link hoverable">Sign Up</a></li>
+						<li class="list-inline-item hoverable"><a  href="login.html" id= "len4"class="nav-link hoverable">Login in</a></li>
+					</ul>
+				</div>
+				<div class="col-4 justify-content-end text-center mt-4">
+					<h4>Contactez-nous</h4>
+					<ul class="list-unstyled">
+						<li>Camille Koechlin</li>
+						<li>69100 Lyon</li>
+						<li>gharianiarwa01@gmail.com</li>
+						<li>53 551 442</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="text-center">&copy; 2023 Scentista Parfum - Tous droits réservés</p>
+		</div>
+	</footer>
+</body>
+</html>
